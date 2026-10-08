@@ -1,0 +1,122 @@
+body {
+   margin:0;
+  font-family: Arial;
+  background-color:black;
+  color:white; 
+}
+
+
+.barra-lateral {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #E6C719;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.boton {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  margin: 5px 10px;
+  background-color:black; 
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.boton:hover {
+  background-color: #66cdaa; 
+  transform: scale(1.1);
+}
+
+.contenido {
+  margin-left: 220px; 
+  padding: 20px;
+}
+
+.sombra-suave{
+  font-size:x-large;
+  color: #2c3e50;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.degradado {
+  background: linear-gradient(to right, #110d10, #e6e4e1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.borde-texto {
+  color: rgb(197, 116, 116);
+  font-weight: bold;
+  -webkit-text-stroke: 1px black;
+}
+
+.flotante {
+  animation: flotar 2s ease-in-out infinite;
+}
+@keyframes flotar {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.fondo-resaltado {
+  background-color: #fffbed;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #2d3436;
+}
+.formulario-box {
+  background-color: #E6C719;
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* 2. ESPACIOS DONDE SE ESCRIBIRÁ (TEXTO, CORREO, CONTRASEÑA, NÚMERO) */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #f3afa2;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #E6C719
+F87C63;
+  color: #FCC6BB;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #E6C719; 
+}
+
+  
+@media (max-width: 768px) {
+  .barra-lateral {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+}
