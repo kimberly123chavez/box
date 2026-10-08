@@ -1,0 +1,129 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puños de Oro Promotions</title>
+    <link rel="stylesheet" href="estilos.css/estilos">
+     <style>
+body {
+   margin:0;
+  font-family: Arial;
+  background-color:black;
+  color:white; 
+}
+/* Configuración para celular (pantallas pequeñas) */
+.barra-lateral {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #E6C719;
+  display: flex;
+  flex-direction: row; /* Coloca los botones uno al lado del otro */
+  justify-content: space-around; /* Distribuye el espacio entre los botones */
+  align-items: center;
+  padding: 10px 0;
+}
+
+/* Configuración para computadora (pantallas de más de 768px) */
+@media (min-width: 768px) {
+  .barra-lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    flex-direction: column; /* Vuelve a colocar los botones en columna */
+    justify-content: flex-start;
+    padding-top: 20px;
+  }
+}
+.boton {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  margin: 5px 10px;
+  background-color:black; 
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.boton:hover {
+  background-color: #66cdaa; 
+  transform: scale(1.1);
+}
+
+.contenido {
+  margin-left: 220px; 
+  padding: 20px;
+}
+
+.sombra-suave{
+  font-size:x-large;
+  color: #2c3e50;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.degradado {
+  background: linear-gradient(to right, #110d10, #e6e4e1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.borde-texto {
+  color: rgb(197, 116, 116);
+  font-weight: bold;
+  -webkit-text-stroke: 1px black;
+}
+
+.flotante {
+  animation: flotar 2s ease-in-out infinite;
+}
+@keyframes flotar {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.fondo-resaltado {
+  background-color: #fffbed;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #2d3436;
+}
+@media (max-width: 768px) {
+  .barra-lateral {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+}
+     </style>
+     </head>     
+ <body>
+ <center>
+  <nav class="barra-lateral">
+        <a href="index.html" class="boton">INICIO</a>
+        <a href="clases.html" class="boton">CLASES</a>
+        <a href="eventos.html" class="boton">EVENTOS</a>
+        <a href="galeria.html" class="boton">GALERIA</a>
+    </nav>
+     <center>
+      <div class="body"></div>
+      <h1>PUÑOS DE ORO PROMOTIONS</h1>
+        <h3>CLUB DE BOXEO</h3>
+        <center> 
+      <img src="img/imagen2.jpeg" width="700" height="250"> <br/>
+       
+       <h3>EN PUÑOS DE ORO CREEMOS EN EL PODER  DEL BOXEO<br>
+         PARA TRANSFORMAR VIDAS. AQUI ENCONTRARAS DISCIPLINA<br>
+          Y UN LUGAR DONDE PODRAS CRECER, TANTO DENTRO COMO FUERA DEL RING</h3>
+        <table>
+          <tr>
+            <td><img src="img/imagen1.jpeg" width="250" height="250"></td>
+            <br>
+            <td><img src="img/imagen3.jpeg" width="250" height="250"></td>
+          </tr>
+        </table>
+     </center> 
+  </center>      
+ </body>     
+</html>
